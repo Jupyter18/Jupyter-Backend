@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body{
+            background-color:#f8f1f1;
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+        .header{
+            color: #f8f1f1;
+            background-color: #11698e;
+            padding: 20px;
+        }
+        .title{
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            padding: 10px;
+        }
+        .footer{
+            color: #f8f1f1;
+            background-color: #19456b ;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+        }
+        .footer > div{
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            padding: 5px;
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+            padding-top: 10vh;
+
+        }
+        .button{
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title"style="font-size:large ">Jupiter User Registration</div>
+    </div>
+
+    <div class="container">
+        <div><h1>You have successfully registered!</h1></div>
+        <br>
+        <div><h4>Employee ID :{{emp_id}}</h4></div>
+        <div><h4>Password :{{password}}</h4></div>
+        <a href={{url}} class="button">Sign-in</a>
+        <br>
+        <br>
+        <div style="color: #eb5e0b;">*Important*  This password an auto-generated unique one. But we recommend changing the password after logging into the system</div>
+        <br>
+    </div>
+    <div class="footer">
+        <div>©jupiter_inc</div>
+        <div>All rights reserved</div>
+    </div>
+</body>
+</html>

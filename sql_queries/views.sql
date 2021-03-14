@@ -1,0 +1,1 @@
+CREATE VIEW available_employees AS SELECT * FROM employee_data WHERE is_deleted = 1 
